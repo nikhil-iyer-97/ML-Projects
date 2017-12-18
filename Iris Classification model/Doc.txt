@@ -1,0 +1,24 @@
+The project is based on classifying the iris dataset available in sklearn using techniques such
+as KNN and Logistic Regression. The dataset is a collection on different iris flowers and their
+types and their features have been described in the dataset.
+
+The model was initially trained on the entire dataset and asked to classify the dataset by
+predicting the class type for the given dataset using KNN and Logistic Regression. The number
+of neighbors for KNN classifier was taken as 5. The results were approximately the same as
+the actual dataset values.
+
+Train-test-split methodology was adopted and the dataset was broken down into 2 parts of 60%
+and 40% proportions for training and testing respectively using the model-selection library.
+Both the models were rained on the training data and the accuracy was compared with the testing
+data. KNN classifier for 5 neighbors performed better than Logistic Regression and KNN classifier
+for 1 neighbor.
+
+Now that it has been established that KNN classifier performs better than Logistic Regression,
+the best k value was calculated by modelling the data using k values from 1 to 25. The graph
+plotted shows that k values 7,10 and 14 gave maximum accuracy when compared with the testing
+data.
+
+The results will vary when tested against a dataset extracted via the train_test_split method
+as every time a random dataset is extracted from the actual dataset, the bias-variance tradeoff
+is clearly visible when the graph is plotted. Small values of k lead to low bias and high variance
+and large values of k lead to high bias and low variance.
