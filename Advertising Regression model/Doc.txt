@@ -7,7 +7,7 @@ seaborn visualization toolkit. Linear Regression was used to predict the sales o
 The data was split into proportions of 80-20 for training and testing. The model was trained
 using the training data and then compared with the tesing data using RMSE testing mechanism.
 
-The results clearly indicated that newspapers contributed little to the awareness about the
+The results clearly indicated that advertising through newspapers contributed little to the awareness about the
 items. Thus, the model was trained again using only TV and Radio to check if the model could
 be fine-tuned and predict the values more accurately. Results show that the RMSE value 
 reduced leading to the conclusion that more money should be spent on advertising through
