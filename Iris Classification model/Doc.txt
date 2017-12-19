@@ -9,7 +9,7 @@ the actual dataset values.
 
 Train-test-split methodology was adopted and the dataset was broken down into 2 parts of 60%
 and 40% proportions for training and testing respectively using the model-selection library.
-Both the models were rained on the training data and the accuracy was compared with the testing
+Both the models were trained on the training data and the accuracy was compared with the testing
 data. KNN classifier for 5 neighbors performed better than Logistic Regression and KNN classifier
 for 1 neighbor.
 
