@@ -14,11 +14,17 @@ data. KNN classifier for 5 neighbors performed better than Logistic Regression a
 for 1 neighbor.
 
 Now that it has been established that KNN classifier performs better than Logistic Regression,
-the best k value was calculated by modelling the data using k values from 1 to 25. The graph
-plotted shows that k values 7,10 and 14 gave maximum accuracy when compared with the testing
-data.
+the best k value was calculated by modelling the data using k values from 1 to 25.
 
 The results will vary when tested against a dataset extracted via the train_test_split method
 as every time a random dataset is extracted from the actual dataset, the bias-variance tradeoff
 is clearly visible when the graph is plotted. Small values of k lead to low bias and high variance
 and large values of k lead to high bias and low variance.
+
+To overcome bias-variance tradeoff, Cross-validation approach was used to get the best training
+model. Number of divisions for cross validation was chosen as 10 and the average cross_val_score
+was calculated for all k values from 1 to 25. The best model turned out to be k_value=18.
+
+This model was compared with the model trained using Logistic Regression using cross_val_score.
+The output showed that KNN for k=18 model significantly outperformed the model trained using
+Logistic Regression.
