@@ -1,3 +1,7 @@
+Both the notebooks use the same dataset to predict results and develop the best models.
+Run both of them to check out the working of various python libraries for machine learning.
+The below description is entirely for "Classification.ipynb" file.
+
 The project is based on classifying the iris dataset available in sklearn using techniques such
 as KNN and Logistic Regression. The dataset is a collection on different iris flowers and their
 types and their features have been described in the dataset.
